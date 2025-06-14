@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: pvt-leech-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 -m bot
+    envVars:
+      - key: API_ID
+        value: your_api_id
+      - key: API_HASH
+        value: your_api_hash
+      - key: BOT_TOKEN
+        value: your_bot_token
+      - key: DATABASE_URL
+        value: your_postgresql_url
+      - key: OWNER_ID
+        value: your_user_id
+      - key: LOG_CHANNEL
+        value: -100xxxxxxxxxx
