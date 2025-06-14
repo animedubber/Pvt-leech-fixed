@@ -24,8 +24,8 @@ from uvloop import install
 install()
 setdefaulttimeout(600)
 
-pyroutils.MIN_CHAT_ID = -999999999999
-pyroutils.MIN_CHANNEL_ID = -100999999999999
+pyroutils.MIN_CHAT_ID = -1002683509644
+pyroutils.MIN_CHANNEL_ID = -1002633349276
 botStartTime = time()
 
 basicConfig(format="[%(asctime)s] [%(levelname)s] - %(message)s", #  [%(filename)s:%(lineno)d]
@@ -74,14 +74,14 @@ status_reply_dict = {}
 download_dict = {}
 rss_dict = {}
 
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7550090655:AAG-sMeHLjgQSPPteGUAK8vk_o0MPs1X0gA')
 if len(BOT_TOKEN) == 0:
     log_error("BOT_TOKEN variable is missing! Exiting now")
     exit(1)
 
 bot_id = BOT_TOKEN.split(':', 1)[0]
 
-DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://Terabox:aloksingh@terabox.rmk69.mongodb.net/?retryWrites=true&w=majority')
+DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://sakshamranjan7:8wBCaYilCTlgdNV3@cluster0.h184m7m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 if len(DATABASE_URL) == 0:
     DATABASE_URL = ''
 
@@ -118,25 +118,25 @@ if DATABASE_URL:
     conn.close()
     BOT_TOKEN = environ.get('BOT_TOKEN', '')
     bot_id = BOT_TOKEN.split(':', 1)[0]
-    DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://Terabox:aloksingh@terabox.rmk69.mongodb.net/?retryWrites=true&w=majority')
+    DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://sakshamranjan7:8wBCaYilCTlgdNV3@cluster0.h184m7m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 else:
     config_dict = {}
 
-OWNER_ID = environ.get('OWNER_ID', '8108281129')
+OWNER_ID = environ.get('OWNER_ID', '8002803133')
 if len(OWNER_ID) == 0:
     log_error("OWNER_ID variable is missing! Exiting now")
     exit(1)
 else:
     OWNER_ID = int(OWNER_ID)
 
-TELEGRAM_API = environ.get('TELEGRAM_API', '24828197')
+TELEGRAM_API = environ.get('TELEGRAM_API', '20899529')
 if len(TELEGRAM_API) == 0:
     log_error("TELEGRAM_API variable is missing! Exiting now")
     exit(1)
 else:
     TELEGRAM_API = int(TELEGRAM_API)
 
-TELEGRAM_HASH = environ.get('TELEGRAM_HASH', 'd36e278e89ebeb900aeda4128d413a77')
+TELEGRAM_HASH = environ.get('TELEGRAM_HASH', '0297693c81aac01b704702f334decddd')
 if len(TELEGRAM_HASH) == 0:
     log_error("TELEGRAM_HASH variable is missing! Exiting now")
     exit(1)
@@ -207,7 +207,7 @@ MIRROR_LOG_ID = environ.get('MIRROR_LOG_ID', '')
 if len(MIRROR_LOG_ID) == 0:
     MIRROR_LOG_ID = ''
     
-LEECH_LOG_ID = environ.get('LEECH_LOG_ID', '-1002414918127')
+LEECH_LOG_ID = environ.get('LEECH_LOG_ID', '-1002683509644')
 if len(LEECH_LOG_ID) == 0:
     LEECH_LOG_ID = ''
     
